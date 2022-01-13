@@ -29,9 +29,53 @@
  *
  */
 let cards = []; // You will use this array in step 6
-
+// const card_Colors = ["red", "yellow", "green", "blue"]
+// const card_Numbers = [0,1,2,3,4,5,6,7,8,9]
 // Continue the code here 👇🏻
+let increment = 0
+class Card {
+  constructor(number, color){
+    this.number = number
+    this.color = color
+  }
+  image(){
+    return `./images/${this.color}_${this.number}.png`
+  }
+};
+for (let num = 0; num <= 9; num++){
+  let greenCard = new Card(num, "green")
+  cards.push(greenCard)
+};
 
+for (let num = 0; num <= 9; num++){
+  let blueCard = new Card(num, "blue")
+  cards.push(blueCard)
+};
+
+for (let num = 0; num <= 9; num++){
+  let redCard = new Card(num, "red")
+  cards.push(redCard)
+};
+
+for (let num = 0; num <= 9; num++){
+  let yellowCard = new Card(num, "yellow")
+  cards.push(yellowCard)
+};
+// forloop(condition){
+//   let blueCards = new Card()
+// }
+// let blueCard = new Card(5, "blue");
+// let redCard = new Card(3, "red");
+// let greenCard = new Card(9, "green");
+// let yellowCard = new Card(4, "yellow");
+// console.log(blueCard);
+// console.log(redCard);
+// console.log(greenCard);
+// console.log(yellowCard);
+// cards.push(blueCard);
+// cards.push(greenCard);
+// cards.push(redCard);
+// cards.push(yellowCard);
 /**
  *
  * Don't touch this code
